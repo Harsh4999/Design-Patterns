@@ -4,20 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10046911-0900-4db6-b6b3-c4a8b4aa1db0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/command/AddMemberCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/command/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/command/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/command/EWSService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/command/MailTasksRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/iterator/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/iterator/Iterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/iterator/ThemeColor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/mediator/ChatMediator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/mediator/ChatMediatorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/mediator/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/mediator/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/mediator/UserImpl.java" afterDir="false" />
+    <list default="true" id="10046911-0900-4db6-b6b3-c4a8b4aa1db0" name="Changes" comment="Added some behavioral patterns">
+      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/momento/AbstractWorkflowCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/momento/AddStepCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/momento/Workflow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/momento/WorkflowCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/momento/WorkflowDesigner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/observers/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/observers/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/observers/OrderObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/observers/PriceObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/observers/QuantityObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/state/Cancelled.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/state/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/state/Delivered.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/state/InTransit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/state/New.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/state/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/state/OrderState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/state/Paid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/strategy/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/strategy/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/strategy/OrderPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/strategy/PrintToFileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/patterns/behavioral/strategy/SummaryPrinter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,20 +77,7 @@
       <recent name="creational.design.patterns.builder" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.design.patterns.behavioral.iterator.Client">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="design.patterns.behavioral.chainOfResponsiblity.Client" />
-      <module name="DesignPatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="design.patterns.behavioral.chainOfResponsiblity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.design.patterns.behavioral.state.Client">
     <configuration name="design.patterns.behavioral.command.Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="design.patterns.behavioral.command.Client" />
       <module name="DesignPatterns" />
@@ -120,12 +117,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="design.patterns.behavioral.observers.Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="design.patterns.behavioral.observers.Client" />
+      <module name="DesignPatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="design.patterns.behavioral.observers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="design.patterns.behavioral.state.Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="design.patterns.behavioral.state.Client" />
+      <module name="DesignPatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="design.patterns.behavioral.state.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.design.patterns.behavioral.state.Client" />
+        <item itemvalue="Application.design.patterns.behavioral.observers.Client" />
         <item itemvalue="Application.design.patterns.behavioral.iterator.Client" />
         <item itemvalue="Application.design.patterns.behavioral.mediator.Client" />
         <item itemvalue="Application.design.patterns.behavioral.command.Client" />
-        <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
   </component>
@@ -148,8 +172,18 @@
       <workItem from="1670678107954" duration="615000" />
       <workItem from="1671714417230" duration="135000" />
       <workItem from="1671882899417" duration="6293000" />
-      <workItem from="1672393894981" duration="7076000" />
+      <workItem from="1672393894981" duration="7628000" />
+      <workItem from="1672434065427" duration="2506000" />
+      <workItem from="1672572030645" duration="5675000" />
     </task>
+    <task id="LOCAL-00001" summary="Added some behavioral patterns">
+      <created>1672420229773</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672420229773</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,5 +199,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added some behavioral patterns" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some behavioral patterns" />
   </component>
 </project>
